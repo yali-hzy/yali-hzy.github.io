@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -79,12 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="yali-hzy&#39;s blog">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="Python 入门">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 入门">
+<meta property="og:url" content="http://example.com/2023/04/02/Python%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="yali-hzy&#39;s blog">
+<meta property="og:description" content="Python 入门">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-04-01T16:30:11.000Z">
+<meta property="article:modified_time" content="2023-04-01T16:31:01.230Z">
 <meta property="article:author" content="yali-hzy">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/2023/04/02/Python入门/"/>
 
 
 
 
 
-  <title>yali-hzy's blog</title>
+  <title>Python 入门 | yali-hzy's blog</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/04/02/Python%E5%85%A5%E9%97%A8/" itemprop="url">Python 入门</a></h1>
+          <h1 class="post-title" itemprop="name headline">Python 入门</h1>
         
 
         <div class="post-meta">
@@ -298,16 +300,75 @@
       
 
       
-        
-          <p>Python 入门</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/04/02/Python%E5%85%A5%E9%97%A8/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>Python 入门</p>
+<span id="more"></span>
+
+<h4 id="ch00"><a href="#ch00" class="headerlink" title="ch00"></a>ch00</h4><p>版权声明：依据<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>许可证进行授权，来源北京理工大学 mooc ，有部分删减</p>
+<p>（PS：北理工曲解了这个协议，应该是允许修改的）</p>
+<h4 id="ch01"><a href="#ch01" class="headerlink" title="ch01"></a>ch01</h4><p>解释：将源代码逐条转换成目标代码的同时逐条运行（类似同声传译）</p>
+<p>脚本语言</p>
+<p><a target="_blank" rel="noopener" href="https://www.python.org/downloads">基本开发环境IDLE</a></p>
+<p>交互式：对每个输入语句及时运行成果，适合语法练习</p>
+<p>文件式：批量执行一组语句并运行结果，编程的主要方式</p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a></p>
+<p>强制缩进，表示所属关系，程序内长度一致</p>
+<p>单行注释，用 <code>#</code> 开头</p>
+<p>多行注释，用 <code>&#39;&#39;&#39;</code> 开始和结束（其实是字符串）</p>
+<p>关联标识符：大小写字母、数字、下划线和中文等；大小写敏感、首字母不能是数字、不与保留字相同</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">and</span> <span class="keyword">as</span> <span class="keyword">assert</span> <span class="keyword">break</span> <span class="keyword">class</span> <span class="title class_">continue</span> <span class="keyword">def</span></span><br><span class="line"><span class="title function_">elif</span> <span class="keyword">else</span> <span class="keyword">except</span> <span class="keyword">finally</span> <span class="keyword">for</span> <span class="keyword">from</span> <span class="keyword">if</span></span><br><span class="line"><span class="keyword">import</span> <span class="keyword">in</span> <span class="keyword">is</span> <span class="keyword">lambda</span> <span class="keyword">not</span> <span class="keyword">or</span> <span class="keyword">pass</span> </span><br><span class="line"><span class="keyword">raise</span> <span class="keyword">return</span> <span class="keyword">try</span> <span class="keyword">while</span> <span class="keyword">with</span> <span class="keyword">yield</span> <span class="keyword">del</span></span><br><span class="line"><span class="keyword">global</span> <span class="keyword">nonlocal</span> <span class="literal">True</span> <span class="literal">False</span> <span class="literal">None</span> <span class="keyword">async</span> <span class="keyword">await</span></span><br></pre></td></tr></table></figure>
+
+<p>数据类型：字符串、整数、浮点数、列表</p>
+<p>字符串：由0个或多个字符组成的有序字符序列</p>
+<p>​	正向递增序号和反向递增序号</p>
+<p>​	<code>[0,len-1]</code> <code>[-len,-1]</code></p>
+<p>​	索引：<code>&lt;Str&gt;[M]</code></p>
+<p>​	切片：<code>&lt;Str&gt;[M:N]</code>（左闭右开），表示到结尾用 <code>[1:]</code> ，到开头用 <code>[:-1]</code></p>
+<p>列表：由0个或多个数据组成的有序序列</p>
+<p>​	用 <code>[]</code> 表示，用 <code>,</code> 分隔各元素</p>
+<p>​	用 <code>in</code> 判断元素是否在列表中</p>
+<p>赋值语句 <code>=</code></p>
+<p>分支语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> :</span><br><span class="line"><span class="keyword">elif</span> :</span><br><span class="line"><span class="keyword">else</span>:</span><br></pre></td></tr></table></figure>
+
+<p>函数：<code>&lt;函数名&gt;(&lt;参数&gt;)</code></p>
+<p>​	输入函数：</p>
+<p>​		<code>&lt;变量&gt; = input(&lt;提示信息字符串&gt;)</code></p>
+<p>​	输出函数：</p>
+<p>​		<code>print(&lt;字符串&gt;)</code></p>
+<p>​	评估函数：去掉参数最外侧引号并执行余下的语句</p>
+<p>​		<code>eval(&lt;字符串&gt;)</code></p>
+<h4 id="ch02"><a href="#ch02" class="headerlink" title="ch02"></a>ch02</h4><p>turtle 库</p>
+<p>有一只海龟，在窗体正中心，在画布上游走，走过的轨迹形成了绘制的图形</p>
+<p>turtle 的绘图窗体：turtle的一个画布空间，最小单位是像素</p>
+<p><code>turtle.setup(width, height, startx, starty)</code>，设置窗体大小和位置，后两个可选，默认正中间，setup不是必须</p>
+<p><code>startx, starty</code> 表示相对整个屏幕的位置，左上角是(0,0)，水平为x轴，竖直是y轴</p>
+<p>绝对坐标体系：窗体正中央为原点的平面直角坐标系，正右方为0度（角度制）</p>
+<p><code>turtle.goto(x, y)</code></p>
+<p><code>turtle.seth(angled)</code></p>
+<p>海龟坐标系</p>
+<p><code>turtle.fd()</code></p>
+<p><code>turtle.bk()</code></p>
+<p><code>turtle.left()</code></p>
+<p><code>turtle.right()</code></p>
+<p>RGB色彩模式</p>
+<p>整数值模式 0~255</p>
+<p>小数值模式 0~1</p>
+<p><code>turtle.colormode(mode)</code> 1.0 or 255</p>
+<p>库引用</p>
+<p><code>import turtle as t</code> 和 <code>from turtle import *</code></p>
+<p><code>turtle.penup()</code>别名 <code>turtle.pu()</code></p>
+<p><code>turtle.pendown()</code> 别名 <code>turtle.pd()</code></p>
+<p><code>turtle.pensize(width)</code> 别名 <code>turtle.width(width)</code></p>
+<p><code>turtle.pencolor(colorstring) turtle.pencolor(r,g,b) turtle.pencolor((r,g,b))</code> </p>
+<p><code>turtle.forward(d)</code> 别名 <code>turtle.fd(d)</code>  <code>d</code> 可为负</p>
+<p><code>turtle.circle(r, extent=None)</code> 依据半径r画extent角度的弧形，圆心在左侧，默认360度</p>
+<p><code>turtle.setheading(angle)</code> 别名 <code>turtle.seth(angle)</code></p>
+<p>循环语句与range()函数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> &lt;变量&gt; <span class="keyword">in</span> <span class="built_in">range</span>(次数):</span><br><span class="line">	&lt;被循环执行的语句&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>range(N)</code> 产生 0~N-1 的整数</p>
+<p><code>range(M,N)</code> 产生 M~N-1 的整数</p>
+
       
     </div>
     
@@ -322,138 +383,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/29/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81-1-2-%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yali-hzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/10/29/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81-1-2-%E7%AB%A0/" itemprop="url">第一行代码 1~2 章</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-10-29T23:34:53+08:00">
-                2022-10-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>第一行代码 1~2 章笔记</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/10/29/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81-1-2-%E7%AB%A0/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/10/29/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81-1-2-%E7%AB%A0/" rel="next" title="第一行代码 1~2 章">
+                <i class="fa fa-chevron-left"></i> 第一行代码 1~2 章
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -463,10 +422,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -474,6 +434,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -494,8 +458,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -546,6 +519,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ch00"><span class="nav-number">1.</span> <span class="nav-text">ch00</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ch01"><span class="nav-number">2.</span> <span class="nav-text">ch01</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ch02"><span class="nav-number">3.</span> <span class="nav-text">ch02</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -679,6 +668,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
